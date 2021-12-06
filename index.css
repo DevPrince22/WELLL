@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: teal;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: teal;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: transparent;
+  color: white;
+  }
+
+  html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+  }
+
+  nav {
+	height: 40px;
+	background: black;
+	background: rgba(0, 0, 0, 0.9);
+}
+nav ul {
+	padding: 0;
+	width: 400px; 
+	margin: 0 auto;
+}
+nav ul li {
+	list-style: none;
+	font-family: arial;
+	font-size: 15px;
+}
+nav ul li a {
+	text-decoration: none;
+	float: left;
+	display: block;
+	padding: 10px 20px;
+	color: white;
+}
+nav ul li a:hover {
+	color: #2a70d9;
+}
+.content {
+	width: 800px;
+	display: block;
+}
+.content img {
+	max-width: 800px;
+	height: auto;
+}
+.contentLogo{
+	width: 900px;
+	height: 500px;
+	background: rgba(201, 201, 201, 0.35);
+	margin: auto;
+}
+.content p {
+	text-align: center;
+}
+
+footer {
+	background: #333333;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: arial;
+}
+.footerLinks {
+   text-align: left;
+}
+.footerLinks ul {
+	padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.footerLinks li {
+	display: inline;
+}
+.footerLinks a {
+	color: #d9d9d9;
+	text-decoration: none;
+	font-size: 13px;
+}
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+	bottom: 100px;
+	color: #b3b3b3;
+	font-size: 11px;
+  float: left;
+}
+.logo {
+  vertical-align: top;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;  
+  float: left;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+section div {
+  font-family: 'Roboto Thin';
+  font-size: 32px;
+  line-height: 55px;
+  text-align: left;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+.features {
+  padding: 8%;
+  clear: both;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features figure {
+  display: inline-block;
+  width: auto;
+  margin: auto;
+  padding: 0px;
+  margin: 40px;
+  position: relative;
+  margin-top: auto;
+}
+
+.features figure img {
+border-radius: 50%;
+width: 75px;
+height: 75px;
+}
+
+figure img:hover {
+  filter: brightness(0.7);
+}
