@@ -1,7 +1,7 @@
 var clicks = 0;
     function myFunction() {
 
-        clicks += 10;
+        clicks += 1;
         document.getElementById("demo").innerHTML = clicks;
 
 
